@@ -1,0 +1,3 @@
+apis:
+  OASFiles/OpenWeather.json:
+    alias: openmap
