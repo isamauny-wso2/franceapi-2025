@@ -29,7 +29,7 @@
             "required": true,
             "schema": {
               "type": "string",
-              "pattern" : "^[a-z\\s]{10,50}$",
+              "pattern" : "^[A-Za-z\\s]{5,50}$",
               "maxLength": 50,
               "minLength": 10
             }
@@ -41,7 +41,7 @@
             "schema": {
               "type": "string",
               "pattern" : "^[a-z]{10,50}$",
-              "maxLength": 128
+              "maxLength": 50
             }
           }
         ],
