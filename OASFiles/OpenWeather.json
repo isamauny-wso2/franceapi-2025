@@ -1,12 +1,13 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "OpenMap",
+    "title": "OpenWeather",
     "version": "1.0"
   },
   "servers": [
     {
-      "url": "https://api.openweathermap.org/data/2.5"
+      "url": "http://api.openweathermap.org/data/2.5",
+      "x-internal": true
     }
   ],
   "security": [
@@ -15,7 +16,7 @@
     }
   ],
   "paths": {
-    "/weather": {
+    "/Weather": {
       "get": {
         "tags": [
           "weather"
@@ -31,7 +32,7 @@
               "type": "string",
               "pattern" : "^[A-Za-z\\s]{5,50}$",
               "maxLength": 50,
-              "minLength": 10
+              "minLength": 5
             }
           },
           {
